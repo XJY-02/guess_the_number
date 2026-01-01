@@ -26,6 +26,8 @@
 │   ├── Player.cpp
 │   └── GameStats.cpp
 └── build/            # 编译输出目录
+    ├── program_debug.exe
+    └── program_release.exe
 ```
 
 ## 设计思想体现
@@ -49,5 +51,3 @@ g++ -std=c++17 -I./include src/*.cpp -o build/program.exe
 # 运行
 ./build/guess_game
 ```
----
-开始游戏：./build/program.exe
