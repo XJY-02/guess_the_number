@@ -11,8 +11,9 @@ void Player::set_answer(int low, int high) {
         // 当读取失败
         if (!(cin >> answer)) {
             cout << "输入错误！请输入一个整数：";
-            cin.clear();             // 清除错误标志
-            cin.ignore(1000, '\n');  // 丢弃错误输入（丢弃至多1000个字符，丢弃\n或EOF后提前停止）
+            cin.clear();  // 清除错误标志
+            cin.ignore(1000,
+                       '\n');  // 丢弃错误输入（丢弃至多1000个字符，丢弃\n或EOF后提前停止）
             continue;
         }
         // 读取成功
